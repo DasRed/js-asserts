@@ -1,0 +1,47 @@
+{
+    "name": "jsassert",
+    "version": "0.0.1",
+    "description": "assertions for node and browser",
+    "main": "./index.js",
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.0",
+        "@babel/plugin-transform-runtime": "^7.4.0",
+        "@babel/polyfill": "^7.4.0",
+        "@babel/preset-env": "^7.4.1",
+        "rollup": "^1.7.0",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-node-resolve": "^4.0.1",
+        "rollup-plugin-progress": "^1.1.1",
+        "rollup-plugin-strip": "^1.2.1",
+        "rollup-plugin-terser": "^4.0.4"
+    },
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DasRed/assertjs.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DasRed/assertjs/issues"
+    },
+    "homepage": "https://github.com/DasRed/assertjs#readme",
+    "keywords": [
+        "assert",
+        "assert-js",
+        "assertjs",
+        "jsassert",
+        "assertion",
+        "validation",
+        "validate",
+        "sanitization",
+        "sanitize",
+        "sanitisation",
+        "sanitise",
+        "check",
+        "checking"
+    ]
+}
