@@ -6,6 +6,7 @@ import {terser} from "rollup-plugin-terser";
 
 // https://rollupjs.org/guide/en#big-list-of-options
 export default [
+    // Node Module
     {
         input:   './src/assert.js',
         output:  {
@@ -18,6 +19,7 @@ export default [
             progress({clearLine: false}),
         ]
     },
+    // ES2015 Minified
     {
         input:   './src/index.js',
         output:  {
@@ -60,6 +62,7 @@ export default [
             terser({sourcemap: true}),
         ]
     },
+    // ES2015 None-Minified
     {
         input:   './src/index.js',
         output:  {
@@ -101,10 +104,11 @@ export default [
             }),
         ]
     },
+    // ES Module Minified
     {
         input:   './src/assert.js',
         output:  {
-            file:      './dist/assert.min.mjs',
+            file:      './dist/assert.esm.min.mjs',
             format:    'esm',
             name:      'assert',
             compact:   true,
@@ -123,10 +127,11 @@ export default [
             terser({sourcemap: true}),
         ]
     },
+    // ES Module None-Minified
     {
         input:   './src/assert.js',
         output:  {
-            file:      './dist/assert.mjs',
+            file:      './dist/assert.esm.js',
             format:    'esm',
             name:      'assert',
             compact:   false,
