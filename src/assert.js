@@ -24,7 +24,7 @@ const validators = {
     isLess,
 };
 
-/* *
+/**
  * @typedef {Object} AssertValidatorFunctions
  * @property {function} isTrue
  * @property {function} isFalse
@@ -39,7 +39,7 @@ const validators = {
  * @property {function} isLess
  */
 
-/* *
+/**
  * @typedef {AssertValidatorFunctions} AssertFunction
  * @property {AssertValidatorFunctions} not
  */
@@ -74,7 +74,7 @@ function assertFunction(expr, message, code, constructor) {
     }
 }
 
-/* * @type {AssertFunction} */
+/** @type {AssertFunction} */
 const assert = assertFunction;
 assert.not   = {};
 
