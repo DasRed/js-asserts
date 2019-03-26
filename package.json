@@ -1,8 +1,8 @@
 {
     "name": "js-asserts",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "assertions for node and browser",
-    "main": "./index.js",
+    "main": "./dist/index.js",
     "scripts": {
         "build": "rollup -c"
     },

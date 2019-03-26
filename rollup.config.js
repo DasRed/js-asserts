@@ -9,7 +9,7 @@ export default [
     {
         input:   './src/assert.js',
         output:  {
-            file:   './index.js',
+            file:   './dist/index.js',
             format: 'cjs',
             name:   'assert',
         },
