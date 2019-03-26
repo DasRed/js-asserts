@@ -1,6 +1,6 @@
 {
     "name": "js-asserts",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "assertions for node and browser",
     "main": "./dist/index.js",
     "scripts": {
