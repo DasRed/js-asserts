@@ -1,5 +1,5 @@
 {
-    "name": "jsassert",
+    "name": "js-asserts",
     "version": "0.0.1",
     "description": "assertions for node and browser",
     "main": "./index.js",
@@ -21,19 +21,25 @@
     "dependencies": {},
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DasRed/assertjs.git"
+        "url": "git+https://github.com/DasRed/js-asserts.git"
     },
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/DasRed/assertjs/issues"
+        "url": "https://github.com/DasRed/js-asserts/issues"
     },
-    "homepage": "https://github.com/DasRed/assertjs#readme",
+    "homepage": "https://github.com/DasRed/js-asserts#readme",
     "keywords": [
+        "asserts",
         "assert",
         "assert-js",
+        "asserts-js",
         "assertjs",
+        "assertsjs",
         "jsassert",
+        "jsasserts",
+        "js-assert",
+        "js-asserts",
         "assertion",
         "validation",
         "validate",
