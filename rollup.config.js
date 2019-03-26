@@ -3,6 +3,8 @@ import progress from 'rollup-plugin-progress';
 import strip from 'rollup-plugin-strip';
 import babel from 'rollup-plugin-babel';
 import {terser} from "rollup-plugin-terser";
+import clear from "rollup-plugin-clear";
+import copy from "rollup-plugin-copy";
 
 // https://rollupjs.org/guide/en#big-list-of-options
 export default [
@@ -16,7 +18,12 @@ export default [
         },
         plugins: [
             resolve(),
+            clear({targets: ['./dist']}),
             progress({clearLine: false}),
+            copy({
+                './index.d.ts': './dist/index.d.ts',
+                verbose:        true
+            }),
         ]
     },
     // ES2015 Minified
@@ -60,6 +67,10 @@ export default [
                 ],
             }),
             terser({sourcemap: true}),
+            copy({
+                './index.d.ts': './dist/assert.min.d.ts',
+                verbose:        true
+            }),
         ]
     },
     // ES2015 None-Minified
@@ -102,6 +113,10 @@ export default [
                     ]
                 ],
             }),
+            copy({
+                './index.d.ts': './dist/assert.d.ts',
+                verbose:        true
+            }),
         ]
     },
     // ES Module Minified
@@ -125,6 +140,10 @@ export default [
                 sourceMap: true,
             }),
             terser({sourcemap: true}),
+            copy({
+                './index.d.ts': './dist/assert.esm.min.d.ts',
+                verbose:        true
+            }),
         ]
     },
     // ES Module None-Minified
@@ -146,6 +165,10 @@ export default [
 
                 // set this to `false` if you're not using sourcemaps – defaults to `true`
                 sourceMap: true,
+            }),
+            copy({
+                './index.d.ts': './dist/assert.esm.d.ts',
+                verbose:        true
             }),
         ]
     }

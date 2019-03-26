@@ -24,7 +24,7 @@ const validators = {
     isLess,
 };
 
-/**
+/* *
  * @typedef {Object} AssertValidatorFunctions
  * @property {function} isTrue
  * @property {function} isFalse
@@ -39,7 +39,7 @@ const validators = {
  * @property {function} isLess
  */
 
-/**
+/* *
  * @typedef {AssertValidatorFunctions} AssertFunction
  * @property {AssertValidatorFunctions} not
  */
@@ -48,7 +48,7 @@ const validators = {
  *
  * @param {boolean} expr
  * @param {string|function} [message] or constructor
- * @param {number|function} [code] or constructor
+ * @param {number|function|string} [code] or constructor
  * @param {function} [constructor]
  */
 function assertFunction(expr, message, code, constructor) {
@@ -74,7 +74,7 @@ function assertFunction(expr, message, code, constructor) {
     }
 }
 
-/** @type {AssertFunction} */
+/* * @type {AssertFunction} */
 const assert = assertFunction;
 assert.not   = {};
 
