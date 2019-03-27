@@ -1,42 +1,48 @@
-import isTrue from './lib/isTrue.js';
-import isFalse from './lib/isFalse.js';
+import hasKey from './lib/hasKey.js';
 import includes from './lib/includes.js';
 import isEmpty from './lib/isEmpty.js';
-import isNil from './lib/isNil.js';
-import hasKey from './lib/hasKey.js';
 import isEqual from './lib/isEqual.js';
-import isGreaterOrEqual from './lib/isGreaterOrEqual.js';
+import isFalse from './lib/isFalse.js';
 import isGreater from './lib/isGreater.js';
-import isLessOrEqual from './lib/isLessOrEqual.js';
+import isGreaterOrEqual from './lib/isGreaterOrEqual.js';
 import isLess from './lib/isLess.js';
+import isLessOrEqual from './lib/isLessOrEqual.js';
+import isNil from './lib/isNil.js';
+import isNull from './lib/isNull.js';
+import isTrue from './lib/isTrue.js';
+import isUndefined from './lib/isUndefined.js';
 
 const validators = {
-    isTrue,
-    isFalse,
+    hasKey,
     includes,
     isEmpty,
-    isNil,
-    hasKey,
     isEqual,
-    isGreaterOrEqual,
+    isFalse,
     isGreater,
-    isLessOrEqual,
+    isGreaterOrEqual,
     isLess,
+    isLessOrEqual,
+    isNil,
+    isNull,
+    isTrue,
+    isUndefined,
 };
 
 /**
  * @typedef {Object} AssertValidatorFunctions
- * @property {function} isTrue
- * @property {function} isFalse
+ * @property {function} hasKey
  * @property {function} includes
  * @property {function} isEmpty
- * @property {function} isNil
- * @property {function} hasKey
  * @property {function} isEqual
- * @property {function} isGreaterOrEqual
+ * @property {function} isFalse
  * @property {function} isGreater
- * @property {function} isLessOrEqual
+ * @property {function} isGreaterOrEqual
  * @property {function} isLess
+ * @property {function} isLessOrEqual
+ * @property {function} isNil
+ * @property {function} isNull
+ * @property {function} isTrue
+ * @property {function} isUndefined
  */
 
 /**
