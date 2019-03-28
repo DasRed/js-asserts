@@ -110,7 +110,7 @@ export default [
     {
         input:   './src/assert.js',
         output:  {
-            file:      './dist/assert.esm.min.mjs',
+            file:      './dist/assert.esm.min.js',
             format:    'esm',
             name:      'assert',
             compact:   true,
