@@ -87,7 +87,7 @@ assert.not   = {};
 Object.entries(validators).forEach(([/** string */ key, /** function */ validator]) => {
     const test = (...args) => {
         const parameters = args.splice(0, validator.length);
-        const expr       = !!validator(parameters);
+        const expr       = !!validator(...parameters);
         return {
             expr,
             args,
